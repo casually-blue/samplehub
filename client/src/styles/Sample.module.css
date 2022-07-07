@@ -1,0 +1,121 @@
+.Sample {
+    --content-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: var(--gutter);
+    background-color: var(--surface-2);
+    border-radius: var(--br);
+    margin-top: var(--gutter-half);
+    padding: var(--gutter-half);
+    padding-left: var(--gutter);
+    position: relative;
+}
+
+.Sample img {
+    width: var(--content-height);
+    height: var(--content-height);
+    object-fit: cover;
+}
+
+.tagNameContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    width: 300px;
+}
+
+wave {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.tagNameContainer::-webkit-scrollbar, wave::-webkit-scrollbar {
+    display: none;
+  }
+
+.tagNameContainer div {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+}
+
+.Sample i {
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.tableHeader {
+    position: absolute;
+    left: 0;
+    transform: translateY(-58px);
+}
+
+.Sample i:hover {
+    color: var(--blue-4);
+}
+
+.waveFormMetadataContainer {
+    display: flex;
+    align-items: center;
+    gap: var(--gutter);
+}
+
+.waveFormMetadataContainer div {
+    width: 250px;
+}
+
+.metaData {
+    display: inherit;
+    justify-content: space-between;
+    width: 300px !important;
+}
+
+.metaData p {
+    position: relative;
+}
+
+.actions {
+    position: absolute;
+    right: var(--gutter);
+    background-color: var(--surface-2);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 10px solid var(--surface-2);
+    transform: translateX(10px);
+}
+
+@media only screen and (max-width: 1186px) {
+    .waveFormMetadataContainer {
+        position: absolute;
+        right: 90px;
+        background-color: var(--surface-2);
+        box-shadow: -10px 0px 10px var(--surface-2);
+    }
+    .Sample {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .waveFormMetadataContainer div {
+        width: 100px;
+    }
+    .waveFormMetadataContainer div {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .waveFormMetadataContainer {
+        position: absolute;
+        right: 50px;
+        background-color: var(--surface-2);
+    }
+    .waveFormMetadataContainer {
+        display: none;
+    }
+}

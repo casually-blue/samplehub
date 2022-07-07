@@ -1,0 +1,101 @@
+.Search {
+    color: white;
+    background-color: var(--surface-1);
+    margin-left: var(--gutter);
+    width: calc(100% - var(--gutter) * 4);
+    border-radius: var(--br);
+    padding: var(--gutter);
+    padding-bottom: 150px;
+}
+
+.searchInput {
+    width: calc(100% - var(--gutter) * 2 - (8px * 2));
+    background-color: var(--surface-1);
+    color: white;
+    padding: 8px;
+    margin-left: var(--gutter);
+    border-radius: var(--br);
+    margin-bottom: var(--gutter-half);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchInput i {
+    margin-left: var(--gutter-half);
+}
+
+.searchInput input {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    font-size: inherit;
+    width: 100%;
+    outline: none;
+}
+
+.searchInput:focus-within {
+    border: 2px solid var(--blue-4);
+    padding: 6px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: var(--gutter-half);
+    margin-bottom: var(--gutter-half);
+    border-bottom: 1px solid var(--surface-2);
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: var(--br);
+}
+
+.option p {
+    font-weight: 600;
+}
+
+.option select, input {
+    background-color: var(--surface-2);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: fit-content;
+}
+
+.filterHeader {
+    font-weight: 400;
+    padding-top: var(--gutter-half);
+    margin-bottom: var(--gutter-half);
+    border-top: 1px solid var(--surface-2);
+}
+
+.resultsInfoText span {
+    color: var(--gray-3);
+}
+
+.tableHeaderContainer {
+    height: 24px;
+    background-color: var(--surface-2);
+    border-radius: var(--br);
+    margin-top: var(--gutter-half);
+}
+
+.rowHeaders {
+    display: flex;
+    justify-content: space-between;
+    width: 21%;
+    margin-left: calc(75px + var(--gutter) + 25% + 25% + var(--gutter-half) - 3px);
+}
+
+@media only screen and (max-width: 600px) {
+    .tableHeaderContainer {
+        display: none;
+    }
+}

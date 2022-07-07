@@ -1,0 +1,54 @@
+.Player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--surface-1);
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    gap: var(--gutter);
+    padding: var(--gutter-half);
+    color: white;
+    font-size: 14;
+    width: fit-content;
+    padding-right: var(--gutter);
+    border-top-right-radius: 20px;
+}
+
+.Player img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.sampleInfo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gutter-quarter);
+}
+
+.sampleInfo a {
+    text-decoration: underline;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.sampleNumbers {
+    background-color: var(--surface-2);
+    border-radius: var(--br);
+    padding: var(--gutter-quarter);
+    margin-left: var(--gutter-half);
+}
+
+@media only screen and (max-width: 800px) {
+    .Player {
+        font-size: 12px;
+        width: 100%;
+        border-radius: 0;
+    }
+}

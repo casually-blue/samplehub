@@ -1,0 +1,6 @@
+.App {
+  height: 100vh;
+  background-color: var(--black);
+  position: relative;
+  font-size: var(--font-size);
+}
